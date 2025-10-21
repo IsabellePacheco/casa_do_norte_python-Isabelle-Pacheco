@@ -1,18 +1,28 @@
-# Casa_do_norte_python 
->Um sistema completo de CRUD em Python com interface gráfica , projetado para gerenciar o estoque de comidas típicas nordestinas.
+# Controle de Estoque de Comidas Nordestinas
 
+Este é um sistema desenvolvido em Python utilizando a biblioteca Tkinter para interface gráfica. O sistema tem como objetivo a gestão de entradas, saídas e cadastro de comidas típicas da região nordestina do Brasil.
 
-## Tela de login
-<img width="554" height="407" alt="image" src="https://github.com/user-attachments/assets/333a5017-705f-4b92-990b-7a5334a4b164" />
+## Funcionalidades
 
-## Tela principal
-<img width="1623" height="718" alt="image" src="https://github.com/user-attachments/assets/c57cfb32-6481-415b-a920-9b687d460bac" />
+- Login de usuários: permite que diferentes usuários acessem o sistema com autenticação.
+- Cadastro, consulta, edição e exclusão de comidas típicas da culinária nordestina.
+- Registro e histórico detalhado das movimentações no estoque (entradas e saídas).
+- Alertas visuais para avisar quando o estoque de um alimento está abaixo do nível mínimo definido.
 
-## Tela cadastro de comidas
-<img width="933" height="131" alt="image" src="https://github.com/user-attachments/assets/a25ae382-a46f-49ed-b268-e94f61c3f109" />
+## Execução
 
-## Tela adicionar nova comida 
-<img width="368" height="301" alt="image" src="https://github.com/user-attachments/assets/d3826cc3-ad82-4da0-ab4c-6176928c4d77" />
+1. Execute o arquivo `db_init.sql` para criar o banco de dados com suas tabelas e dados iniciais, ou deixe o sistema criar automaticamente no primeiro uso.
+2. Execute o arquivo `main.py` para iniciar o sistema e acessar a interface gráfica.
 
-## Tela estoque 
-<img width="959" height="196" alt="image" src="https://github.com/user-attachments/assets/cec858ee-6c61-4df7-8443-9be5178bf50f" />
+## Estrutura de arquivos
+
+- `main.py` : Arquivo principal que inicializa o sistema e gerencia as telas principais.
+- `db.py` : Responsável pela conexão e inicialização do banco de dados SQLite.
+- `login.py` : Tela e lógica de autenticação dos usuários.
+- `comidas.py` : Cadastro, edição, exclusão e exibição das comidas típicas.
+- `estoque.py` : Gestão das quantidades no estoque e registro das movimentações.
+- `utils.py` : Funções auxiliares diversas, como centralização de janelas e ordenação.
+- `db_init.sql` : Script SQL para criação do banco de dados com tabelas e dados iniciais.
+- `README.md` : Este arquivo, com orientações e informações gerais sobre o sistema.
+
+**Requisitos:** Python 3.12 ou superior, Tkinter e SQLite.
