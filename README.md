@@ -1,4 +1,6 @@
 # Casa_do_norte_python 
+>Um sistema completo de CRUD em Python com interface gráfica , projetado para gerenciar o estoque de comidas típicas nordestinas.
+
 
 ## Tela de login
 <img width="554" height="407" alt="image" src="https://github.com/user-attachments/assets/333a5017-705f-4b92-990b-7a5334a4b164" />
